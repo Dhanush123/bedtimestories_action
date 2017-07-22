@@ -1,0 +1,15 @@
+{
+  "name": "bedtimestories_action",
+  "version": "0.0.0",
+  "description": "google action",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "google",
+    "action"
+  ],
+  "author": "dhanush patel",
+  "license": "BSD-2-Clause"
+}
