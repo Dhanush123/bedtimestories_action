@@ -2,6 +2,8 @@
 
 process.env.DEBUG = "actions-on-google:*";
 const App = require("actions-on-google").ApiAiApp;
+const admin = require("firebase-admin");
+var serviceAccount = require("../firebasekey.json");
 
 // [START YourAction]
 exports.kidsStories = (request, response) => {
