@@ -13,6 +13,12 @@ exports.kidsStories = (request, response) => {
   // Fulfill action business logic
   function responseHandler (app) {
     // Complete your fulfillment logic and send a response
+    var initMsg = "Hi, welcome to Kids Stories! What would you like to do? You can specify by story type or length."
+    var backups = [
+      "p1",
+      "p2",
+      "p3"
+    ]; //todo
     app.tell("Hello, World!");
   }
 
