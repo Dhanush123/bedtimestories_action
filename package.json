@@ -11,5 +11,8 @@
     "action"
   ],
   "author": "dhanush patel",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "actions-on-google": "^1.2.0"
+  }
 }
