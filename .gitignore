@@ -83,3 +83,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+#other stuff by dhanush
+.floo
+.flooignore
+.env
