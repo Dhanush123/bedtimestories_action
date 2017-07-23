@@ -4,7 +4,7 @@ process.env.DEBUG = "actions-on-google:*";
 const App = require("actions-on-google").ApiAiApp;
 
 // [START YourAction]
-exports.bedtimeStories = (request, response) => {
+exports.kidsStories = (request, response) => {
   const app = new App({request, response});
   console.log("Request headers: " + JSON.stringify(request.headers));
   console.log("Request body: " + JSON.stringify(request.body));
