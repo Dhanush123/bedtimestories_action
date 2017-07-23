@@ -8,7 +8,6 @@ exports.bedtimeStories = (request, response) => {
   const app = new App({request, response});
   console.log("Request headers: " + JSON.stringify(request.headers));
   console.log("Request body: " + JSON.stringify(request.body));
-
   // Fulfill action business logic
   function responseHandler (app) {
     // Complete your fulfillment logic and send a response
@@ -19,4 +18,4 @@ exports.bedtimeStories = (request, response) => {
   actionMap.set("input.welcome", responseHandler);
 
   app.handleRequest(actionMap);
-});
+}
