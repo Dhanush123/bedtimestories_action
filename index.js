@@ -18,7 +18,7 @@ exports.kidsStories = (request, response) => {
       "I'm ready when you are! Just say \"fable\", \"fairy tale\", or \"random\" to start listening to a kids bedtime story!",
       "I can tell you a great kid's bedtime story some other time. Thank you for using Kids Stories!"
     ]; //todo
-    app.tell("Hello, World!");
+    app.ask(initMsg,backups);
   }
 
   function giveStory (app) {
