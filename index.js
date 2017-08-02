@@ -36,6 +36,7 @@ exports.kidsStories = (request, response) => {
         //impossible to come here
     }
     jsonfile.readFile(file, function(err, stories) {
+      console.log("file is: " + JSON.stringify(stories));
       switch(storyType) {
         case "fable":
           var storyNum = getRandInt(stories.fable.short.length);
