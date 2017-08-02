@@ -4,7 +4,6 @@ process.env.DEBUG = "actions-on-google:*";
 const App = require("actions-on-google").ApiAiApp;
 const admin = require("firebase-admin");
 const jsonfile = require("jsonfile");
-var serviceAccount = require("./firebasekey.json");
 
 // [START YourAction]
 exports.kidsStories = (request, response) => {
@@ -39,11 +38,11 @@ exports.kidsStories = (request, response) => {
     jsonfile.readFile(file, function(err, stories) {
       switch(storyType) {
         case "fable":
-          int storyNum = getRandInt(stories.fable.short.length);
+          var storyNum = getRandInt(stories.fable.short.length);
           app.tell("Here's a great fable:\n\n"+stories.fable.short[storyNum]);
           break;
         case "fairytale":
-          int storyNum = (storyLength == "short") ? getRandInt(stories.fairytales.short.length) : getRandInt(stories.fairytales.long.length);
+          var storyNum = (storyLength == "short") ? getRandInt(stories.fairytales.short.length) : getRandInt(stories.fairytales.long.length);
           app.tell("Here's a great fairy tale:\n\n"+stories.fairy.short[storyNum]);
           break;
         default:
